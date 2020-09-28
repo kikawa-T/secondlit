@@ -8,10 +8,17 @@
 import UIKit
 
 class forthViewController: UIViewController {
-
+    
+    @IBOutlet var thanks: UILabel!
+    
+    @IBOutlet var text1: UILabel!
+    
+    //@IBOutlet var text2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        thanks.text = String("見てくれてありがとうございます．")
+        text1.text = String("このアプリを真剣に考えてくれたあなたならペットを幸せにできます．")
         // Do any additional setup after loading the view.
     }
     
