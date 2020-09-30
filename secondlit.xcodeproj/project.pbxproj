@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		683DC6B7251CAF9F00DDBC2E /* MorphingLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 683DC6B6251CAF9F00DDBC2E /* MorphingLabel */; };
 		683DC6C2251CB44A00DDBC2E /* MorphinglabelXCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 683DC6C1251CB44A00DDBC2E /* MorphinglabelXCFramework */; };
+		689130D125245FCF0072CBA4 /* fifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689130D025245FCF0072CBA4 /* fifthViewController.swift */; };
+		689130D5252460200072CBA4 /* sixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689130D4252460200072CBA4 /* sixthViewController.swift */; };
 		68AE7196251DCAB100035B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE7195251DCAB100035B4D /* ViewController.swift */; };
 		68AE719C251DCAE400035B4D /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE719B251DCAE400035B4D /* secondViewController.swift */; };
 		68AE71A0251DCB0400035B4D /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE719F251DCB0400035B4D /* thirdViewController.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		689130D025245FCF0072CBA4 /* fifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthViewController.swift; sourceTree = "<group>"; };
+		689130D4252460200072CBA4 /* sixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthViewController.swift; sourceTree = "<group>"; };
 		68AE7195251DCAB100035B4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		68AE719B251DCAE400035B4D /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		68AE719F251DCB0400035B4D /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 				68AE719B251DCAE400035B4D /* secondViewController.swift */,
 				68AE719F251DCB0400035B4D /* thirdViewController.swift */,
 				68AE71A4251DDEF200035B4D /* forthViewController.swift */,
+				689130D025245FCF0072CBA4 /* fifthViewController.swift */,
+				689130D4252460200072CBA4 /* sixthViewController.swift */,
 			);
 			path = secondlit;
 			sourceTree = "<group>";
@@ -325,9 +331,11 @@
 				68AE719C251DCAE400035B4D /* secondViewController.swift in Sources */,
 				68B1C382251BE04C0022AC2B /* AppDelegate.swift in Sources */,
 				68AE71A5251DDEF200035B4D /* forthViewController.swift in Sources */,
+				689130D5252460200072CBA4 /* sixthViewController.swift in Sources */,
 				68AE71A0251DCB0400035B4D /* thirdViewController.swift in Sources */,
 				68AE7196251DCAB100035B4D /* ViewController.swift in Sources */,
 				68B1C384251BE04C0022AC2B /* SceneDelegate.swift in Sources */,
+				689130D125245FCF0072CBA4 /* fifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

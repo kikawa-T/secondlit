@@ -8,7 +8,7 @@
 import UIKit
 
 class secondViewController: UIViewController {
-
+    
     //questionLabel
     @IBOutlet var secondLabel: UILabel!
     
@@ -31,8 +31,12 @@ class secondViewController: UIViewController {
     var YesArrayDonthave: [String] = ["犬種は決まっていますか？", "犬種によって病気のなりやすさ，性格の違いを知っていますか？","10年以上ペットを飼える状態でありますか？", "家族全員が納得していますか？", "歳を取った犬を介護できますか？", "飼いたい犬を飼う上でどれくらいのお金がかかるか知ってますか？", "犬のためにしっかり時間を取れますか？", "ペットショップ以外にもブリーダーや親里募集があることを知っていますか？"]
     var count4: Int = 0
     //Array of DontHaveNoButtonLabel 8
-    var NoArrayDonthave: [String] = ["犬種によって飼いやすさもかなり異なります．ペットショップに行って考えるだけでなく，事前に調べてみたらいかがですか．", "動物病院のホームページでは，このようなことを伝えてくださっているところもあるので，調べてみると良いですよ．", "犬の寿命は，10年以上です．それだけの長い時間の命を預かることを知りましょう．", "ペットは家族の一員です．一人の意思で変えることはありません．しっかり話し合って決断しましょう．", "高齢者の方々が介護を必要とするのと同様に犬にも介護は必要です．その責任があることを覚えておいてください．", "飼うのは大型犬ですか？小型犬ですか？", "散歩はもちろん遊んであげること，触れ合ってあげる時間を取ってあげなければいけません．わんちゃんは寂しくなってしまい，怒って反抗してきます．それではせっかく飼ってもお互い不幸ではないでしょうか？","ペットショップはもちろん，SNSからの募集，ブリーダー，保健所など様々なところで飼うことができます．自分にあった場所を探してみてください．"]
+    var NoArrayDonthave: [String] = ["犬種によって飼いやすさもかなり異なります．ペットショップに行って考えるだけでなく，事前に調べてみたらいかがですか．", "動物病院のホームページでは，このようなことを伝えてくださっているところもあるので，調べてみると良いですよ．", "犬の寿命は，10年以上です．それだけの長い時間の命を預かることを知りましょう．", "ペットは家族の一員です．一人の意思で変えることはありません．しっかり話し合って決断しましょう．", "高齢者の方々が介護を必要とするのと同様に犬にも介護は必要です．その責任があることを覚えておいてください．", "生涯費用が小型犬で340万〜360万で，大型犬がその100万ほど高い感じです．経済的な部分は大切なので見通しを持っておきましょう．", "散歩はもちろん遊んであげること，触れ合ってあげる時間を取ってあげなければいけません．わんちゃんは寂しくなってしまい，怒って反抗してきます．それではせっかく飼ってもお互い不幸ではないでしょうか？","ペットショップはもちろん，SNSからの募集，ブリーダー，保健所など様々なところで飼うことができます．自分にあった場所を探してみてください．"]
     var count5: Int = 0
+    //have question1
+    var SecondTextYes1 = String("生まれた子犬は，健康面や環境に慣れるのが大変です．前もって準備しておきましょう．")
+    var SecondTextNo1 = String("子犬は避妊・去勢手術をしなければ勝手にできてしまいます．飼わないならばしっかり手術をしましょう．")
+
     
     //SwitchCount
     var SwitchCountNo: Int!
@@ -55,7 +59,7 @@ class secondViewController: UIViewController {
     //YesButton
     @IBAction func Yes() {
         switch SwitchCountYes {
-        case 0:
+        case 0://Yesを押した時(飼いたい側)
             count4 = count4 + 1
             count5 = count5 + 1
             if count4 == 8 {
@@ -63,7 +67,7 @@ class secondViewController: UIViewController {
             } else {
                 secondLabel.text = YesArrayDonthave[count4]
             }
-        case 1:
+        case 1://次を押した時(飼いたい側)
             count4 = count4 + 1
             SwitchCountNo = 0
             SwitchCountYes = 0
@@ -73,13 +77,13 @@ class secondViewController: UIViewController {
                 secondLabel.text = YesArrayDonthave[count4]
                 YesButton.setTitle("はい", for: .normal)
             }
-        case 2:
+        case 2://飼っている側へのシフト
             SwitchCountYes = 3
             SwitchCountNo = 3
             YesButton.setTitle("はい", for: .normal)
             NoButton.setTitle("いいえ", for: .normal)
             secondLabel.text = YesArrayHave[count2]
-        case 3:
+        case 3://Yesを押した時(飼っている側)
             count3 = count3 + 1
             count2 = count2 + 1
             if count2 == 8 {
@@ -87,7 +91,7 @@ class secondViewController: UIViewController {
             } else {
                 secondLabel.text = YesArrayHave[count2]
             }
-        case 4:
+        case 4://次を押した時(飼っている側)
             count2 = count2 + 1
             SwitchCountYes = 3
             SwitchCountNo = 3
@@ -97,6 +101,11 @@ class secondViewController: UIViewController {
                 secondLabel.text = YesArrayHave[count2]
                 YesButton.setTitle("はい", for: .normal)
             }
+        case 5://第二分岐
+            secondLabel.text = SecondTextYes1
+            SwitchCountYes = 4
+            //SwitchCountNo = 3
+            YesButton.setTitle("次へ", for: .normal)
         default:
             break
         }
@@ -104,23 +113,36 @@ class secondViewController: UIViewController {
     //NoButton
     @IBAction func No() {
         switch  SwitchCountNo {
-            case 0:
-                secondLabel.text = NoArrayDonthave[count5]
-                count5 = count5 + 1
-                SwitchCountYes = 1
-                YesButton.setTitle("次へ", for: .normal)
-            case 2:
-                SwitchCountYes = 0
-                SwitchCountNo = 0
+        case 0://NOを押した時(飼いたい側)
+            secondLabel.text = NoArrayDonthave[count5]
+            count5 = count5 + 1
+            SwitchCountYes = 1
+            YesButton.setTitle("次へ", for: .normal)
+        case 2://飼いたい側のシフト
+            SwitchCountYes = 0
+            SwitchCountNo = 0
+            YesButton.setTitle("はい", for: .normal)
+            NoButton.setTitle("いいえ", for: .normal)
+            secondLabel.text = YesArrayDonthave[count4]
+        case 3://Noを押した時(飼っている側)
+            if count3 == 0 {
+                secondLabel.text = NoArrayHave[count3]
+                count3 = count3 + 1
+                SwitchCountYes = 5
+                SwitchCountNo = 5
                 YesButton.setTitle("はい", for: .normal)
                 NoButton.setTitle("いいえ", for: .normal)
-                secondLabel.text = YesArrayDonthave[count4]
-            case 3:
+            } else {
                 secondLabel.text = NoArrayHave[count3]
                 count3 = count3 + 1
                 SwitchCountYes = 4
                 YesButton.setTitle("次へ", for: .normal)
-            default:
+            }
+        case 5://第二分岐
+            secondLabel.text = SecondTextNo1
+            SwitchCountYes = 4
+            YesButton.setTitle("次へ", for: .normal)
+        default:
             break
         }
     }
@@ -132,13 +154,13 @@ class secondViewController: UIViewController {
         //secondLabel.text = YesArrayDonthave[]
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

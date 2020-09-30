@@ -15,13 +15,28 @@ class forthViewController: UIViewController {
     
     //@IBOutlet var text2: UILabel!
     
+    //飼っているbutton
+    @IBOutlet var YesButton: UIButton!
+    
+    //飼いたいbutton
+    @IBOutlet var NoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         thanks.text = String("見てくれてありがとうございます．")
         text1.text = String("このアプリを真剣に考えてくれたあなたならペットを幸せにできます．")
+        YesButton.setTitle("飼っている人へ", for: .normal)
+        NoButton.setTitle("飼いたい人へ", for: .normal)
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func have() {
+        
+    }
+    
+    @IBAction func donthave() {
+        
+    }
 
     /*
     // MARK: - Navigation
