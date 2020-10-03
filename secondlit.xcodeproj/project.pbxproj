@@ -11,7 +11,6 @@
 		683DC6C2251CB44A00DDBC2E /* MorphinglabelXCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 683DC6C1251CB44A00DDBC2E /* MorphinglabelXCFramework */; };
 		689130D125245FCF0072CBA4 /* fifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689130D025245FCF0072CBA4 /* fifthViewController.swift */; };
 		689130D5252460200072CBA4 /* sixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689130D4252460200072CBA4 /* sixthViewController.swift */; };
-		68AC954B2525A79C006E8C01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC954A2525A79C006E8C01 /* ViewController.swift */; };
 		68AE719C251DCAE400035B4D /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE719B251DCAE400035B4D /* secondViewController.swift */; };
 		68AE71A0251DCB0400035B4D /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE719F251DCB0400035B4D /* thirdViewController.swift */; };
 		68AE71A5251DDEF200035B4D /* forthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE71A4251DDEF200035B4D /* forthViewController.swift */; };
@@ -22,6 +21,7 @@
 		68B1C38E251BE04E0022AC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B1C38C251BE04E0022AC2B /* LaunchScreen.storyboard */; };
 		68B1C399251BE04E0022AC2B /* secondlitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1C398251BE04E0022AC2B /* secondlitTests.swift */; };
 		68B1C3A4251BE04E0022AC2B /* secondlitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1C3A3251BE04E0022AC2B /* secondlitUITests.swift */; };
+		68EA478B252809520020A50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA478A252809520020A50C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 /* Begin PBXFileReference section */
 		689130D025245FCF0072CBA4 /* fifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthViewController.swift; sourceTree = "<group>"; };
 		689130D4252460200072CBA4 /* sixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthViewController.swift; sourceTree = "<group>"; };
-		68AC954A2525A79C006E8C01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68AE719B251DCAE400035B4D /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		68AE719F251DCB0400035B4D /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		68AE71A4251DDEF200035B4D /* forthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forthViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		68B1C39F251BE04E0022AC2B /* secondlitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secondlitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B1C3A3251BE04E0022AC2B /* secondlitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondlitUITests.swift; sourceTree = "<group>"; };
 		68B1C3A5251BE04E0022AC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68EA478A252809520020A50C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 				68AE71A4251DDEF200035B4D /* forthViewController.swift */,
 				689130D025245FCF0072CBA4 /* fifthViewController.swift */,
 				689130D4252460200072CBA4 /* sixthViewController.swift */,
-				68AC954A2525A79C006E8C01 /* ViewController.swift */,
+				68EA478A252809520020A50C /* ViewController.swift */,
 			);
 			path = secondlit;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 				689130D5252460200072CBA4 /* sixthViewController.swift in Sources */,
 				68AE71A0251DCB0400035B4D /* thirdViewController.swift in Sources */,
 				68B1C384251BE04C0022AC2B /* SceneDelegate.swift in Sources */,
-				68AC954B2525A79C006E8C01 /* ViewController.swift in Sources */,
+				68EA478B252809520020A50C /* ViewController.swift in Sources */,
 				689130D125245FCF0072CBA4 /* fifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
