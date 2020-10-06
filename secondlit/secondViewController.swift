@@ -76,6 +76,7 @@ class secondViewController: UIViewController {
             } else {
                 secondLabel.text = YesArrayDonthave[count4]
                 YesButton.setTitle("はい", for: .normal)
+                NoButton.setTitle("いいえ", for: .normal)
             }
         case 2://飼っている側へのシフト
             SwitchCountYes = 3
@@ -100,12 +101,14 @@ class secondViewController: UIViewController {
             } else {
                 secondLabel.text = YesArrayHave[count2]
                 YesButton.setTitle("はい", for: .normal)
+                NoButton.setTitle("いいえ", for: .normal)
             }
         case 5://第二分岐
             secondLabel.text = SecondTextYes1
             SwitchCountYes = 4
             //SwitchCountNo = 3
             YesButton.setTitle("次へ", for: .normal)
+            NoButton.setTitle("", for: .normal)
         default:
             break
         }
@@ -118,6 +121,7 @@ class secondViewController: UIViewController {
             count5 = count5 + 1
             SwitchCountYes = 1
             YesButton.setTitle("次へ", for: .normal)
+            NoButton.setTitle("", for: .normal)
         case 2://飼いたい側のシフト
             SwitchCountYes = 0
             SwitchCountNo = 0
@@ -137,11 +141,13 @@ class secondViewController: UIViewController {
                 count3 = count3 + 1
                 SwitchCountYes = 4
                 YesButton.setTitle("次へ", for: .normal)
+                NoButton.setTitle("", for: .normal)
             }
         case 5://第二分岐
             secondLabel.text = SecondTextNo1
             SwitchCountYes = 4
             YesButton.setTitle("次へ", for: .normal)
+            NoButton.setTitle("", for: .normal)
         default:
             break
         }

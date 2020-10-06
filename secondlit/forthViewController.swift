@@ -42,9 +42,6 @@ class forthViewController: UIViewController {
     }
 
     //
-    func textsize() {
-        
-    }
     /*
     // MARK: - Navigation
 

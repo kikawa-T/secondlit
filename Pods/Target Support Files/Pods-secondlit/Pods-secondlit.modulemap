@@ -1,0 +1,6 @@
+framework module Pods_secondlit {
+  umbrella header "Pods-secondlit-umbrella.h"
+
+  export *
+  module * { export * }
+}
