@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import MorphingLabel
 
 class thirdViewController: UIViewController {
 
-    @IBOutlet var thirdLabel : UILabel!
+    @IBOutlet var thirdLabel : LTMorphingLabel!
     //labelで表示する配列
     var thirdLabelArray : [String] = ["犬は人間と同じ生き物です．", "歳を取ると元気がなくなります．", "不満があると吠えます", "怒られると反抗します", "散歩しなければストレスもたまります．", "それでも可愛いです．家族ですから．", "大切に飼ってくれますか？"]
     //配列番号
