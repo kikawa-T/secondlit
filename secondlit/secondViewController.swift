@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Spring
 
 class secondViewController: UIViewController {
     
@@ -13,10 +14,10 @@ class secondViewController: UIViewController {
     @IBOutlet var secondLabel: UILabel!
     
     //yesbutton
-    @IBOutlet var YesButton: UIButton!
+    @IBOutlet var YesButton: SpringButton!
     
     //Nobutton
-    @IBOutlet var NoButton: UIButton!
+    @IBOutlet var NoButton: SpringButton!
     
     //Array of questionLabel
     var labelArray: [String] = []
@@ -46,7 +47,9 @@ class secondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         YesButton.setTitle("飼っている", for: .normal)
+        //YesButton.animation = "flipX"
         NoButton.setTitle("飼いたい", for: .normal)
+        //NoButton.animation = "flipY"
         secondLabel.text = String("あなたは，犬を...")
         SwitchCountYes = 2
         SwitchCountNo = 2

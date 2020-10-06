@@ -12,9 +12,9 @@ class fifthViewController: UIViewController {
     @IBOutlet var text1: UILabel!
     @IBOutlet var text2: UILabel!
     @IBOutlet var text3: UILabel!
-    var text11 = String("ペットに長生きしてさせてあげること，最後まで責任を持って育てること，ペットと触れ合う時間をたくさん取ること，しっかり散歩してあげること，様々なことが浮かぶと思います．とても大切で，必要なことだらけです．それでも私は，良い飼い主とは")
+    var text11 = String("ペットに長生きしてさせてあげること，最後まで責任を持って育てること，ペットと触れ合う時間をたくさん取ること，しっかり散歩してあげること，様々なことが浮かぶと思います．とても大切で，必要なことだらけです．それでも私は，良い飼い主についてこう考えます．")
     var text22 = String("飼う前から死ぬまでの間ずっと，ペットにとっての１番の幸せは何かを考え続けること")
-    var text33 = String("だと思いますよ")
+    var text33 = String("皆さんの自分の中で良い飼い主に考えてみてください")
     override func viewDidLoad() {
         super.viewDidLoad()
         text1.text = text11

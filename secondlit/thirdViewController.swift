@@ -47,11 +47,10 @@ class thirdViewController: UIViewController {
             button.addTarget(self, action: #selector(buttonEvent(_:)), for: UIControl.Event.touchUpInside)
             button.setTitleColor(UIColor.black, for: UIControl.State.normal)//color
             button.setTitle("はい", for: UIControl.State.normal)//label
-            button.frame = CGRect(x: 0, y: 0, width: 170, height: 100)//size
+            button.frame = CGRect(x: 110, y: 500, width: 170, height: 100)//size
             button.backgroundColor = UIColor.systemGray5
             button.titleLabel?.font =  UIFont.boldSystemFont(ofSize: 25)
             button.layer.cornerRadius = 50
-            button.center = self.view.center
             self.view.addSubview(button)
         } else {
             set()
