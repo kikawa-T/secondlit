@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		179478DB5F47DB1FC8F3585D /* Pods_secondlit_secondlitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1E3F0D2F1C3CCB7247B465 /* Pods_secondlit_secondlitUITests.framework */; };
-		683DC6B7251CAF9F00DDBC2E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 683DC6B6251CAF9F00DDBC2E /* SwiftPackageProductDependency */; };
-		683DC6C2251CB44A00DDBC2E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 683DC6C1251CB44A00DDBC2E /* SwiftPackageProductDependency */; };
+		683DC6B7251CAF9F00DDBC2E /* MorphingLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 683DC6B6251CAF9F00DDBC2E /* MorphingLabel */; };
+		683DC6C2251CB44A00DDBC2E /* MorphinglabelXCFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 683DC6C1251CB44A00DDBC2E /* MorphinglabelXCFramework */; };
 		689130D125245FCF0072CBA4 /* fifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689130D025245FCF0072CBA4 /* fifthViewController.swift */; };
-		689130D5252460200072CBA4 /* sixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689130D4252460200072CBA4 /* sixthViewController.swift */; };
 		68AE719C251DCAE400035B4D /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE719B251DCAE400035B4D /* secondViewController.swift */; };
 		68AE71A0251DCB0400035B4D /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE719F251DCB0400035B4D /* thirdViewController.swift */; };
 		68AE71A5251DDEF200035B4D /* forthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE71A4251DDEF200035B4D /* forthViewController.swift */; };
@@ -63,7 +62,6 @@
 		40CF3F21C6C1F8461EE9D7DE /* Pods-secondlit-secondlitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secondlit-secondlitUITests.debug.xcconfig"; path = "Target Support Files/Pods-secondlit-secondlitUITests/Pods-secondlit-secondlitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		507179575D422422FF40539D /* Pods-secondlit-secondlitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secondlit-secondlitUITests.release.xcconfig"; path = "Target Support Files/Pods-secondlit-secondlitUITests/Pods-secondlit-secondlitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		689130D025245FCF0072CBA4 /* fifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthViewController.swift; sourceTree = "<group>"; };
-		689130D4252460200072CBA4 /* sixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthViewController.swift; sourceTree = "<group>"; };
 		68AE719B251DCAE400035B4D /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		68AE719F251DCB0400035B4D /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		68AE71A4251DDEF200035B4D /* forthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forthViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				683DC6B7251CAF9F00DDBC2E /* BuildFile in Frameworks */,
-				683DC6C2251CB44A00DDBC2E /* BuildFile in Frameworks */,
+				683DC6B7251CAF9F00DDBC2E /* MorphingLabel in Frameworks */,
+				683DC6C2251CB44A00DDBC2E /* MorphinglabelXCFramework in Frameworks */,
 				D8C27000382D664B6FFC5DA2 /* Pods_secondlit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,7 +161,6 @@
 				68AE719F251DCB0400035B4D /* thirdViewController.swift */,
 				68AE71A4251DDEF200035B4D /* forthViewController.swift */,
 				689130D025245FCF0072CBA4 /* fifthViewController.swift */,
-				689130D4252460200072CBA4 /* sixthViewController.swift */,
 				68EA478A252809520020A50C /* ViewController.swift */,
 			);
 			path = secondlit;
@@ -197,7 +194,6 @@
 				F5D272838D11322D6791E0E4 /* Pods-secondlitTests.debug.xcconfig */,
 				E6D4DCD07E33B33622BE2734 /* Pods-secondlitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -222,8 +218,8 @@
 			);
 			name = secondlit;
 			packageProductDependencies = (
-				683DC6B6251CAF9F00DDBC2E /* SwiftPackageProductDependency */,
-				683DC6C1251CB44A00DDBC2E /* SwiftPackageProductDependency */,
+				683DC6B6251CAF9F00DDBC2E /* MorphingLabel */,
+				683DC6C1251CB44A00DDBC2E /* MorphinglabelXCFramework */,
 			);
 			productName = secondlit;
 			productReference = 68B1C37E251BE04C0022AC2B /* secondlit.app */;
@@ -300,7 +296,7 @@
 			);
 			mainGroup = 68B1C375251BE04C0022AC2B;
 			packageReferences = (
-				683DC659251C93B400DDBC2E /* RemoteSwiftPackageReference */,
+				683DC659251C93B400DDBC2E /* XCRemoteSwiftPackageReference "LTMorphingLabel" */,
 			);
 			productRefGroup = 68B1C37F251BE04C0022AC2B /* Products */;
 			projectDirPath = "";
@@ -469,7 +465,6 @@
 				68AE719C251DCAE400035B4D /* secondViewController.swift in Sources */,
 				68B1C382251BE04C0022AC2B /* AppDelegate.swift in Sources */,
 				68AE71A5251DDEF200035B4D /* forthViewController.swift in Sources */,
-				689130D5252460200072CBA4 /* sixthViewController.swift in Sources */,
 				68AE71A0251DCB0400035B4D /* thirdViewController.swift in Sources */,
 				68B1C384251BE04C0022AC2B /* SceneDelegate.swift in Sources */,
 				68EA478B252809520020A50C /* ViewController.swift in Sources */,
@@ -637,6 +632,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -808,7 +804,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		683DC659251C93B400DDBC2E /* RemoteSwiftPackageReference */ = {
+		683DC659251C93B400DDBC2E /* XCRemoteSwiftPackageReference "LTMorphingLabel" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lexrus/LTMorphingLabel.git";
 			requirement = {
@@ -819,14 +815,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		683DC6B6251CAF9F00DDBC2E /* SwiftPackageProductDependency */ = {
+		683DC6B6251CAF9F00DDBC2E /* MorphingLabel */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 683DC659251C93B400DDBC2E /* RemoteSwiftPackageReference */;
+			package = 683DC659251C93B400DDBC2E /* XCRemoteSwiftPackageReference "LTMorphingLabel" */;
 			productName = MorphingLabel;
 		};
-		683DC6C1251CB44A00DDBC2E /* SwiftPackageProductDependency */ = {
+		683DC6C1251CB44A00DDBC2E /* MorphinglabelXCFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 683DC659251C93B400DDBC2E /* RemoteSwiftPackageReference */;
+			package = 683DC659251C93B400DDBC2E /* XCRemoteSwiftPackageReference "LTMorphingLabel" */;
 			productName = MorphinglabelXCFramework;
 		};
 /* End XCSwiftPackageProductDependency section */

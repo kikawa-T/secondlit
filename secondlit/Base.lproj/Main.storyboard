@@ -150,7 +150,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR2-FD-lJh">
                                 <rect key="frame" x="255" y="644" width="120" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="私の回答"/>
                                 <connections>
                                     <action selector="have" destination="Ld0-Ev-Z8l" eventType="touchUpInside" id="bRF-TS-8g5"/>
                                     <segue destination="b2I-7I-lFN" kind="presentation" id="yzW-VH-hUA"/>
