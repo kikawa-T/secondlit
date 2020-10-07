@@ -1,8 +1,14 @@
 PODS:
+  - Pastel (0.6.0)
   - Spring (1.0.6)
 
 DEPENDENCIES:
+  - Pastel
   - Spring (from `https://github.com/MengTo/Spring.git`)
+
+SPEC REPOS:
+  trunk:
+    - Pastel
 
 EXTERNAL SOURCES:
   Spring:
@@ -14,8 +20,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
+  Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
   Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
 
-PODFILE CHECKSUM: 61441a084e4379ff3f3894ebf88948d7ad5a7133
+PODFILE CHECKSUM: b486459181ddcf378fb0b910c4e89587e8564535
 
 COCOAPODS: 1.9.3

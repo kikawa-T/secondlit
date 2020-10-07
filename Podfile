@@ -7,6 +7,7 @@ target 'secondlit' do
 
   # Pods for secondlit
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+pod "Pastel"
   target 'secondlitTests' do
     inherit! :search_paths
     # Pods for testing

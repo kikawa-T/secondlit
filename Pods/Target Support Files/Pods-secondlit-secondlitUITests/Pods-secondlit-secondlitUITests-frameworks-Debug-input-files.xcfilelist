@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-secondlit-secondlitUITests/Pods-secondlit-secondlitUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework
 ${BUILT_PRODUCTS_DIR}/Spring/Spring.framework

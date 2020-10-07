@@ -46,8 +46,8 @@ class secondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //YesButton.frame = CGRect(x: 0, y: 0, width: 150, height: 127)
         YesButton.setTitle("飼っている", for: .normal)
-        //YesButton.animation = "flipX"
         NoButton.setTitle("飼いたい", for: .normal)
         //NoButton.animation = "flipY"
         secondLabel.text = String("あなたは，犬を...")
@@ -63,6 +63,7 @@ class secondViewController: UIViewController {
     @IBAction func Yes() {
         switch SwitchCountYes {
         case 0://Yesを押した時(飼いたい側)
+            Yanimation()
             count4 = count4 + 1
             count5 = count5 + 1
             if count4 == 8 {
@@ -71,6 +72,7 @@ class secondViewController: UIViewController {
                 secondLabel.text = YesArrayDonthave[count4]
             }
         case 1://次を押した時(飼いたい側)
+            Nanimation()
             count4 = count4 + 1
             SwitchCountNo = 0
             SwitchCountYes = 0
@@ -93,6 +95,7 @@ class secondViewController: UIViewController {
             if count2 == 8 {
                 transition()
             } else {
+                Yanimation()
                 secondLabel.text = YesArrayHave[count2]
             }
         case 4://次を押した時(飼っている側)
@@ -102,11 +105,13 @@ class secondViewController: UIViewController {
             if count2 == 8 {
                 transition()
             } else {
+                Nanimation()
                 secondLabel.text = YesArrayHave[count2]
                 YesButton.setTitle("はい", for: .normal)
                 NoButton.setTitle("いいえ", for: .normal)
             }
         case 5://第二分岐
+            animation2()
             secondLabel.text = SecondTextYes1
             SwitchCountYes = 4
             //SwitchCountNo = 3
@@ -120,6 +125,7 @@ class secondViewController: UIViewController {
     @IBAction func No() {
         switch  SwitchCountNo {
         case 0://NOを押した時(飼いたい側)
+            animation2()
             secondLabel.text = NoArrayDonthave[count5]
             count5 = count5 + 1
             SwitchCountYes = 1
@@ -133,6 +139,7 @@ class secondViewController: UIViewController {
             secondLabel.text = YesArrayDonthave[count4]
         case 3://Noを押した時(飼っている側)
             if count3 == 0 {
+                Yanimation()
                 secondLabel.text = NoArrayHave[count3]
                 count3 = count3 + 1
                 SwitchCountYes = 5
@@ -140,6 +147,7 @@ class secondViewController: UIViewController {
                 YesButton.setTitle("はい", for: .normal)
                 NoButton.setTitle("いいえ", for: .normal)
             } else {
+                animation2()
                 secondLabel.text = NoArrayHave[count3]
                 count3 = count3 + 1
                 SwitchCountYes = 4
@@ -147,6 +155,7 @@ class secondViewController: UIViewController {
                 NoButton.setTitle("", for: .normal)
             }
         case 5://第二分岐
+            animation2()
             secondLabel.text = SecondTextNo1
             SwitchCountYes = 4
             YesButton.setTitle("次へ", for: .normal)
@@ -156,12 +165,51 @@ class secondViewController: UIViewController {
         }
     }
     
-    func set(sender: AnyObject) {
-        //buttonに設定されたtagを取得
-        //let No:UIButton = sender as! UIButton//tag..1
-        //let Yes:UIButton = sender as! UIButton//tag..2
-        //secondLabel.text = YesArrayDonthave[]
+    //上から出てくる
+    func Nanimation() {
+        self.YesButton.x = 0
+        self.YesButton.y = 0
+        self.YesButton.duration = 1
+        self.YesButton.delay = 0.5
+        self.YesButton.animation = "fadeInDown"
+        self.YesButton.animate()
+        self.NoButton.x = 0
+        self.NoButton.y = 0
+        self.NoButton.duration = 1
+        self.NoButton.animation = "fadeInDown"
+        self.NoButton.animate()
     }
+    func Yanimation() {
+        self.YesButton.x = 0
+        self.YesButton.y = 0
+        self.YesButton.duration = 1
+        self.YesButton.animation = "fadeInDown"
+        self.YesButton.animate()
+        self.NoButton.x = 0
+        self.NoButton.y = 0
+        self.NoButton.duration = 1
+        self.NoButton.delay = 0.5
+        self.NoButton.animation = "fadeInDown"
+        self.NoButton.animate()
+    }
+    //上に消える
+    func animation2() {
+        self.NoButton.animation = "fadeOut"
+        self.NoButton.duration = 0
+        self.NoButton.delay = 0
+        self.NoButton.animate()
+        self.NoButton.animateToNext {
+            self.NoButton.x = 0
+            self.NoButton.y = 0
+            self.NoButton.duration = 1
+            self.NoButton.delay = 0
+            self.NoButton.animation = "fadeInDown"
+            self.NoButton.animateTo()
+       }
+    }
+    
+    
+
     /*
      // MARK: - Navigation
      
