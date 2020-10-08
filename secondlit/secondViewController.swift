@@ -47,6 +47,8 @@ class secondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //YesButton.frame = CGRect(x: 0, y: 0, width: 150, height: 127)
+        YesButton.alpha = 0
+        NoButton.alpha = 0
         YesButton.setTitle("飼っている", for: .normal)
         NoButton.setTitle("飼いたい", for: .normal)
         //NoButton.animation = "flipY"
