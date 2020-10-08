@@ -10,6 +10,8 @@ import Spring
 
 class secondViewController: UIViewController {
     
+    let saveData = UserDefaults.standard
+    
     //questionLabel
     @IBOutlet var secondLabel: UILabel!
     
@@ -38,6 +40,9 @@ class secondViewController: UIViewController {
     var SecondTextYes1 = String("生まれた子犬は，健康面や環境に慣れるのが大変です．前もって準備しておきましょう．")
     var SecondTextNo1 = String("子犬は避妊・去勢手術をしなければ勝手にできてしまいます．飼わないならばしっかり手術をしましょう．")
 
+    //sixthViewControllerで使う．
+    var havecount: Int!
+    var donthavecount: Int!
     
     //SwitchCount
     var SwitchCountNo: Int!
@@ -46,12 +51,12 @@ class secondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //YesButton.frame = CGRect(x: 0, y: 0, width: 150, height: 127)
+        havecount = 0
+        donthavecount = 10
         YesButton.alpha = 0
         NoButton.alpha = 0
         YesButton.setTitle("飼っている", for: .normal)
         NoButton.setTitle("飼いたい", for: .normal)
-        //NoButton.animation = "flipY"
         secondLabel.text = String("あなたは，犬を...")
         SwitchCountYes = 2
         SwitchCountNo = 2
@@ -59,6 +64,12 @@ class secondViewController: UIViewController {
     
     //画面遷移
     func transition() {
+        //保存
+        if SwitchCountYes == 0 || SwitchCountYes == 1 {
+            saveData.set(donthavecount,forKey:"count")
+        } else if SwitchCountYes == 3 || SwitchCountYes == 4 {
+            saveData.set(havecount,forKey: "count")
+        }
         self.performSegue(withIdentifier: "NextPage2", sender: nil)
     }
     //YesButton
@@ -71,6 +82,7 @@ class secondViewController: UIViewController {
             if count4 == 8 {
                 transition()
             } else {
+                donthavecount = donthavecount + 1
                 secondLabel.text = YesArrayDonthave[count4]
             }
         case 1://次を押した時(飼いたい側)
@@ -97,6 +109,7 @@ class secondViewController: UIViewController {
             if count2 == 8 {
                 transition()
             } else {
+                havecount = havecount + 1
                 Yanimation()
                 secondLabel.text = YesArrayHave[count2]
             }

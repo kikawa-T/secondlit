@@ -23,6 +23,7 @@
 		68B1C399251BE04E0022AC2B /* secondlitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1C398251BE04E0022AC2B /* secondlitTests.swift */; };
 		68B1C3A4251BE04E0022AC2B /* secondlitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1C3A3251BE04E0022AC2B /* secondlitUITests.swift */; };
 		68EA478B252809520020A50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA478A252809520020A50C /* ViewController.swift */; };
+		68F9F21F252F3E9600DE3D4C /* seventhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9F21E252F3E9600DE3D4C /* seventhViewController.swift */; };
 		750C7B159CE5D6010BB9E52B /* Pods_secondlitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015611A953311D2BFE687C2C /* Pods_secondlitTests.framework */; };
 		D8C27000382D664B6FFC5DA2 /* Pods_secondlit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BFF71C844467C4CA088F64 /* Pods_secondlit.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		68B1C3A3251BE04E0022AC2B /* secondlitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondlitUITests.swift; sourceTree = "<group>"; };
 		68B1C3A5251BE04E0022AC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68EA478A252809520020A50C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68F9F21E252F3E9600DE3D4C /* seventhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seventhViewController.swift; sourceTree = "<group>"; };
 		78BFF71C844467C4CA088F64 /* Pods_secondlit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secondlit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAD8B795C2A566C21982210 /* Pods-secondlit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secondlit.debug.xcconfig"; path = "Target Support Files/Pods-secondlit/Pods-secondlit.debug.xcconfig"; sourceTree = "<group>"; };
 		DF1E3F0D2F1C3CCB7247B465 /* Pods_secondlit_secondlitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secondlit_secondlitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 				689130D025245FCF0072CBA4 /* fifthViewController.swift */,
 				68EA478A252809520020A50C /* ViewController.swift */,
 				6866F9AA252DE41F00AB8996 /* sixthViewController.swift */,
+				68F9F21E252F3E9600DE3D4C /* seventhViewController.swift */,
 			);
 			path = secondlit;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				68AE71A0251DCB0400035B4D /* thirdViewController.swift in Sources */,
 				68B1C384251BE04C0022AC2B /* SceneDelegate.swift in Sources */,
 				68EA478B252809520020A50C /* ViewController.swift in Sources */,
+				68F9F21F252F3E9600DE3D4C /* seventhViewController.swift in Sources */,
 				689130D125245FCF0072CBA4 /* fifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
