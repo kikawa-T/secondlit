@@ -48,11 +48,11 @@ class secondViewController: UIViewController {
     var SwitchCountNo: Int!
     var SwitchCountYes: Int!
     
+    @IBOutlet var moon: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        havecount = 0
-        donthavecount = 10
+        moon.layer.cornerRadius = 100
         YesButton.alpha = 0
         NoButton.alpha = 0
         YesButton.setTitle("飼っている", for: .normal)
@@ -60,6 +60,11 @@ class secondViewController: UIViewController {
         secondLabel.text = String("あなたは，犬を...")
         SwitchCountYes = 2
         SwitchCountNo = 2
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        havecount = 0
+        donthavecount = 10
     }
     
     //画面遷移
@@ -76,13 +81,13 @@ class secondViewController: UIViewController {
     @IBAction func Yes() {
         switch SwitchCountYes {
         case 0://Yesを押した時(飼いたい側)
+            donthavecount = donthavecount + 1
             Yanimation()
             count4 = count4 + 1
             count5 = count5 + 1
             if count4 == 8 {
                 transition()
             } else {
-                donthavecount = donthavecount + 1
                 secondLabel.text = YesArrayDonthave[count4]
             }
         case 1://次を押した時(飼いたい側)
@@ -104,12 +109,12 @@ class secondViewController: UIViewController {
             NoButton.setTitle("いいえ", for: .normal)
             secondLabel.text = YesArrayHave[count2]
         case 3://Yesを押した時(飼っている側)
+            havecount = havecount + 1
             count3 = count3 + 1
             count2 = count2 + 1
             if count2 == 8 {
                 transition()
             } else {
-                havecount = havecount + 1
                 Yanimation()
                 secondLabel.text = YesArrayHave[count2]
             }
