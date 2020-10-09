@@ -52,11 +52,11 @@ class sixthViewController: UIViewController {
             score.text = String("50点!")
         } else if count == 4 || count == 14 {
             score.text = String("60点!!")
-        } else if count == 5 || count == 12 {
+        } else if count == 5 || count == 15 {
             score.text = String("70点!!")
-        } else if count == 6 || count == 13 {
+        } else if count == 6 || count == 16 {
             score.text = String("80点!!!")
-        } else if count == 7 || count == 14 {
+        } else if count == 7 || count == 17 {
             score.text = String("90点!!!")
         } else if count == 8 || count == 18 {
             score.text = String("100点!!!!")
